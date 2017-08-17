@@ -3,11 +3,8 @@ package demo
 class DemoService() {
 
 	/**
-	 * See:
-	 *
-	 *  https://kotlinlang.org/docs/reference/properties.html#getters-and-setters
-	 *
-	 * For more information regarding Getters & Setters
+	 * See: [Kotlin Getters & Setters](https://kotlinlang.org/docs/reference/properties.html#getters-and-setters)
+	 * for more information regarding Getters & Setters
 	 *
 	 *  @returns [Int] Value of counter
 	 */
