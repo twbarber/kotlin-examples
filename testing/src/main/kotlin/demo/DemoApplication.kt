@@ -1,8 +1,7 @@
 package demo
 
-@SpringBootApplication
-class KotlinDemoApplication
+class DemoApplication
 
 fun main(args: Array<String>) {
-	SpringApplication.run(KotlinDemoApplication::class.java, *args)
+
 }
