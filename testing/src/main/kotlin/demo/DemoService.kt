@@ -1,6 +1,6 @@
 package demo
 
-class DemoService {
+class DemoService() {
 
 	/**
 	 * See:
@@ -13,6 +13,12 @@ class DemoService {
 	 */
 	var counter: Int = 0
 		private set
+
+	private var repo: Repo = DemoRepo()
+
+	constructor(repo: Repo) : this() {
+		this.repo = repo
+	}
 
 	/** Reset [counter] to 0 **/
 	fun resetCounter() {
@@ -31,6 +37,10 @@ class DemoService {
 	 */
 	fun decrementCounter() {
 		this.counter -= 1
+	}
+
+	fun foo() : Int {
+		return repo.foo()
 	}
 
 }
