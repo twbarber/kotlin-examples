@@ -15,9 +15,11 @@ class DemoService() {
 		private set
 
 	private var repo: Repo = DemoRepo()
+	private var serv: Service = Service()
 
-	constructor(repo: Repo) : this() {
+	constructor(repo: Repo, serv: Service) : this() {
 		this.repo = repo
+		this.serv = serv
 	}
 
 	/** Reset [counter] to 0 **/
@@ -41,6 +43,10 @@ class DemoService() {
 
 	fun foo() : Int {
 		return repo.foo()
+	}
+
+	fun bar() : Int {
+		return serv.bar()
 	}
 
 }

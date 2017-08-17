@@ -14,10 +14,14 @@ class DemoServiceMockJUnitTest {
 	 *
 	 * For information regarding Mockito Kotlin Syntax
 	 */
-	val mockRepo : Repo = mock {
+	private val mockRepo : Repo = mock {
 		on { foo() } doReturn 42
 	}
 	// val mockRepoNoTypeInfer = mock<DemoRepo>()
+
+	private val mockService : Service = mock {
+		on { bar() } doReturn 9999
+	}
 
 	@Test
 	fun `Default Repo Foo Returns 1`() {
@@ -27,8 +31,8 @@ class DemoServiceMockJUnitTest {
 
 	@Test
 	fun `Mock Repo Foo Returns 42`() {
-		val service = DemoService(mockRepo)
-		Assert.assertEquals(42, service.foo())
+		val service = DemoService(mockRepo, mockService)
+		Assert.assertEquals(9999, service.bar())
 	}
 
 }
