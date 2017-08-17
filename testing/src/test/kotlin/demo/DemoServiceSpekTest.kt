@@ -31,7 +31,6 @@ class DemoServiceSpekTest : Spek({
 			assertEquals(1, service.counter)
 			service.resetCounter()
 			assertEquals(0, service.counter)
-
 		}
 	}
 

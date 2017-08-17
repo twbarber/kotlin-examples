@@ -1,7 +1,6 @@
 package demo
 
-class DemoService() {
-
+class DemoService {
 
 	/**
 	 * See:
