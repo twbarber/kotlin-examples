@@ -1,5 +1,5 @@
 rootProject.name = 'kotlin-examples'
-include 'spring-boot-starter'
+include 'spring-boot'
 include 'testing'
 include 'lambda'
 include 'interop'
