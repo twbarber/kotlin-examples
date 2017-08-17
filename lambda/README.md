@@ -4,7 +4,7 @@
 
 Lambda executable `jar` written using Kotlin and Gradle.
 
-## Demployment Instructions
+## Deployment Instructions
 
 - Run `./gradlew build` to build your `jar`.
 - Upload `/build/distributions/lambda-web-test-1.0-SNAPSHOT.zip` to a new Lambda Function
