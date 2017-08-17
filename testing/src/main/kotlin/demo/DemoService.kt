@@ -1,6 +1,7 @@
 package demo
 
-class DemoService {
+class DemoService() {
+
 
 	/**
 	 * See:
@@ -9,23 +10,27 @@ class DemoService {
 	 *
 	 * For more information regarding Getters & Setters
 	 *
-	 *  @returns [Int] Value of [counter]
+	 *  @returns [Int] Value of counter
 	 */
 	var counter: Int = 0
 		private set
-		get() {
-			return Math.abs(field)
-		}
 
+	/** Reset [counter] to 0 **/
 	fun resetCounter() {
 		this.counter = 0
 	}
 
-	fun incramentCounter() {
+	/**
+	 * Add 1 to [counter].
+	 */
+	fun incrementCounter() {
 		this.counter += 1
 	}
 
-	fun decramentCounter() {
+	/**
+	 * Subtract 1 from [counter].
+	 */
+	fun decrementCounter() {
 		this.counter -= 1
 	}
 
