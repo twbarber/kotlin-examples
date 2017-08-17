@@ -1,12 +1,14 @@
-# AWS Lambda with Kotlin
+# Spring Boot Demo Web Service
 
 ## About
 
-Lambda executable `jar` written using Kotlin and Gradle.
+Kotlin based Spring Boot Application
 
 ## Demployment Instructions
 
-- Run `./gradlew build` to build your `jar`.
-- Upload `/build/distributions/lambda-web-test-1.0-SNAPSHOT.zip` to a new Lambda Function
-- Set the Handler of the function to `lambda.Main::handler`
-- The Logs should show your Lambda host's IP Address
+- Run `./gradlew bootRun` to start the service
+- Navigate to `localhost:8080/hello` to use
+
+## Further Reading
+
+See [Introducing Kotlin support in Spring Framework 5.0](https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0)
