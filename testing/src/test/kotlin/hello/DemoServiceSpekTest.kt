@@ -1,4 +1,4 @@
-package demo
+package hello
 
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.given
