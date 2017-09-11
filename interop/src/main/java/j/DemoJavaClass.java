@@ -1,21 +1,24 @@
 package j;
 
 import k.DemoKotlinClass;
+import k.Friendly;
 
-public class DemoJavaClass {
+public class DemoJavaClass implements Friendly {
+
+    private DemoKotlinClass kotlin = new DemoKotlinClass();
 
     public static void main(String[] args) {
-        DemoKotlinClass demo = new DemoKotlinClass();
-        System.out.println(demo.hello());
-        System.out.println(demo.helloJava());
+        DemoJavaClass java = new DemoJavaClass();
+        System.out.println(java.hello());
+        System.out.println(java.helloKotlin());
     }
 
-    public String helloJava() {
+    public String hello() {
         return "Hello, Java.";
     }
 
-    public String helloKotlin() {
-        return new DemoKotlinClass().hello();
+    private String helloKotlin() {
+        return kotlin.hello();
     }
 
 }

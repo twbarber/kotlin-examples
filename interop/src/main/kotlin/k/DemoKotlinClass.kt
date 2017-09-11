@@ -2,23 +2,24 @@ package k
 
 import j.DemoJavaClass
 
-class DemoKotlinClass {
+class DemoKotlinClass : Friendly {
+
+	private val java = DemoJavaClass()
 
 	companion object {
 		@JvmStatic fun main(args: Array<String>) {
-			val demoJava = DemoJavaClass()
-			print(demoJava.helloJava())
-			print(demoJava.helloKotlin())
+			val demo = DemoKotlinClass()
+            println(demo.hello())
+            println(demo.helloJava())
 		}
 	}
 
-	fun hello() : String? {
+	override fun hello() : String {
 		return "Hello, Kotlin"
 	}
 
-	fun helloJava() : String {
-		val demoJava = DemoJavaClass()
-		return demoJava.helloJava()
+	private fun helloJava() : String {
+		return java.hello()
 	}
 
 }
