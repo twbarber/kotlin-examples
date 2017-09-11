@@ -1,4 +1,6 @@
-package hello;
+package j;
+
+import k.DemoKotlinClass;
 
 public class DemoJavaClass {
 

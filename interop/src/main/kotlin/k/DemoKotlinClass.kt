@@ -1,4 +1,6 @@
-package hello
+package k
+
+import j.DemoJavaClass
 
 class DemoKotlinClass {
 

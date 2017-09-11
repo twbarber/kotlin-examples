@@ -1,4 +1,4 @@
-package hello
+package other
 
 import java.util.concurrent.ThreadLocalRandom
 
