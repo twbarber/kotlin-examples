@@ -1,7 +1,9 @@
 package j;
 
+import hello.HelloWorld;
 import k.DemoKotlinClass;
 import k.Friendly;
+import nullable.NullSafetyExample;
 
 public class DemoJavaClass implements Friendly {
 
@@ -20,5 +22,7 @@ public class DemoJavaClass implements Friendly {
     private String helloKotlin() {
         return kotlin.hello();
     }
+
+    private NullSafetyExample nullSafetyExample = new NullSafetyExample();
 
 }
